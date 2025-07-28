@@ -1,0 +1,22 @@
+html, body{height:100%; margin:0; padding:0; }
+
+#main02{width:95%; margin:auto; overflow:hidden; }
+#main02 .nav{float:left; width:20%; padding-top:20px; margin-right:2%;}
+table,tr,td {
+            border: 1px solid black;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            border-collapse: collapse;
+            text-align:center;
+}
+th{width: 120px; padding:10px 0;}
+td{width: 100px; padding:10px 0;}
+#main02 .content{float:left; width:78%; margin:auto; height:100vh; margin-top:20px;  }
+iframe{width:100%; height:100%; margin-top:20px; background:#fff; }
+
+@media (max-width:768px){
+    #main02 .nav,
+    #main02 .content{float:none; width:100%; margin:0;}
+    table{width:100%; }
+}
