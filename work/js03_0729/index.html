@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+      //변수 선언
+      // 상수 : 항상 같은 수
+      const num0 = 0;
+
+      //변수 : var, let
+      let xx;
+      let yy;
+      let zz;
+      let num1, num2, result;
+
+      // 변수 선언과 초기화
+      let str = "선경";
+
+      //초기화
+      xx=0, yy=0, zz=0
+      num1 = 10;
+      num2 = 20;
+      result = 0;
+
+      result = num1 + num2;
+      console.log(result)
+      console.log(`두 수의 합은 ${result}`)
+      document.getElementById("result").innerHTML=`두 수의 합은 ${result} 입니다.`
+
+      let userNumber = parseInt(prompt('숫자를 입력하세요.'));
+      if(userNumber != null)
+        (parseInt(userNumbrt) % 3 === 0)? alert('3의 배수 입니다.') : alert('3의 배수가 아닙니다.')
+      else
+        alert('입력이 취소 되었습니다.');
+      
+      </script>
+</body>
+</html>
