@@ -25,11 +25,13 @@
   </style>
 </head>
 <body>
-    <div class="time">
-      <h3>지금시간</h3>
-      <input type="text" id="hour" placeholder="시간입력" value="00"><span> : </span><input type="text" id="min" placeholder="분입력" value="00">
-      <button class="btn" onclick="bgSetting()">임의시간설정</button>
-    </div>
+    <form>
+      <div class="time">
+        <h3>지금시간</h3>
+        <input type="text" id="hour" placeholder="시간입력" value="00" maxlength="2" minlength="2"><span> : </span><input type="text" id="min" placeholder="분입력" value="00" maxlength="2" minlength="2">
+        <button type="submit" class="btn" onclick="bgSetting()">임의시간설정</button>
+      </div>
+    </form>
     <div id="bg">
       <p id="result"></p>
     </div>
