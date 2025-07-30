@@ -19,7 +19,7 @@ function bgSetting(myHour, myMin) {
     hourStr = String(hours).padStart(2, '0');
     minStr = String(mins).padStart(2, '0');
 
-    let Msg = `지금시간 - <span>${hourStr}:${minStr}</span>`;
+    let Msg = `지금시간 - ${hourStr}<span>:</span>${minStr}`;
     let greeeting_img = "";
 
     // 예시용으로 시간 범위 설정
