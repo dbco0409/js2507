@@ -24,7 +24,7 @@ function bgSetting(myHour, myMin) {
 
     // 예시용으로 시간 범위 설정
     let timeAM = 9; // 오전 0시 ~ 11시까지
-    let timePM = 18; // 오후 12시 ~ 17시까지
+    let timePM = 17; // 오후 12시 ~ 17시까지
 
     if (hours < timeAM) {
         Msg += `<br/>굿모닝! 오늘도 화이팅!`;
