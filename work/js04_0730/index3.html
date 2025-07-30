@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js</title>
+  <style>
+    input{width:50px; text-align:center;border:1px solid #ddd; padding:5px; outline:none; }
+    #time{padding:5px; }
+    .time span{padding:0 5px; display:inline-block;}
+    .time{display:flex; width:600px; margin:Auto; align-items: center;}
+    .time h3{margin-right:10px; }
+    .btn{height:34px; margin-left:10px; background:#fff; border:1px solid #ddd; color:#000; }
+    #bg{width:650px; height:650px; margin:auto; background-size:cover !Important; display:flex; justify-content: center; align-items: center; font-size:36px; color:#000; text-align: center;}
+    #result{background:rgba(0,0,0,.8); color:#fff; padding:10px; }
+    #result span {
+      animation: timeani .5s steps(1, start) infinite;
+    }
+
+    @keyframes timeani {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+    <div class="time">
+      <h3>지금시간</h3>
+      <input type="text" id="hour" placeholder="시간입력" value="00"><span> : </span><input type="text" id="min" placeholder="분입력" value="00">
+      <button class="btn" onclick="bgSetting()">임의시간설정</button>
+    </div>
+    <div id="bg">
+      <p id="result"></p>
+    </div>
+    <script src="index3.js"></script>
+</body>
+</html>
