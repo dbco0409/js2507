@@ -17,7 +17,7 @@ function bgSetting(myHour, myMin) {
     let mins = (inputMin === '') ? myMin : parseInt(inputMin);
 
     hourStr = String(hours).padStart(2, '0');
-    minStr = String(mins).padStart(2, '0');
+    minStr = String(mins).padStart(2, '0'); 
 
     let Msg = `지금시간 - ${hourStr}<span>:</span>${minStr}`;
     let greeeting_img = "";
