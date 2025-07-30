@@ -48,5 +48,5 @@ function bgSetting(myHour, myMin) {
     console.log(Msg);
 
     document.getElementById('result').innerHTML = Msg;
-    document.getElementById('bg').style.background = `url('images/${greeeting_img}')`;
+    document.getElementById('bg').style.background = `url('images/${greeeting_img}') top center`;
 }
