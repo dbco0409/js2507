@@ -55,6 +55,33 @@ let jquery = study.splice(1,1);
 document.writeln(`반환된 배열: ${jquery}<br/>`);
 document.writeln(`변경된 배열: ${js}<br/>`);
 
+// 인수가 3개 이상인 경우
 let modernJs = study.splice(1,0,'typescript');
 document.writeln(`반환된 배열: ${modernJs}<br/>`);
 document.writeln(`변경된 배열: ${js}<br/>`);
+
+let colors = ["red","green","blue","white","black"];
+document.writeln(colors.slice(2)); // 인덱스 2부터 끝까지
+document.writeln("<hr/>");
+document.writeln(colors.slice(2,4)); // 인덱스 2,3
+
+
+
+//
+console.log(new Date());
+console.log(new Date('\n2024-02-25\n'));
+console.log(new Date('2024-02-25T18:00:00\n\n'));
+
+console.log(new Date("2024\n"));
+console.log(new Date("2024-02\n"));
+console.log(new Date("2024-02-25\n"));
+
+console.log(new Date('2024-02-25T18:00:00\n'));
+console.log(new Date('2024-02-25T18:00:00Z\n\n'));
+
+console.log(new Date('02/25/2024\n'));
+
+console.log(new Date('Mon Jan 20 2024 15:00:41 GMT+0900 (대한민국 표준시)\n'));
+
+
+
