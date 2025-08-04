@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js</title>
+</head>
+<body>
+    <h1>The Document Object</h1>
+    <h2>The Forms Property</h2>
+
+    <p><form id="myCarForm">
+      Favorite Car : <input type="text" name="fname" value="Volvo">
+    </form></p>
+
+    <p><form id="myColorForm">
+      Favorite Color : <input type="text" name="favcolor" value="Blue">
+    </form></p>
+
+    <p>The id of the first form element is:</p>
+    <p id="demo"></p>
+    
+    <script>
+      const forms = document.forms;
+      let text = "";
+      for (let i = 0; i<forms.length; i++){
+        text += forms[i].id + "<br/>";
+      }
+      document.getElementById("demo").innerHTML = text; 
+    </script>
+</body>
+</html>
