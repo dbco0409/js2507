@@ -1,0 +1,10 @@
+div{text-align:center; padding:2px 10px; line-height:1; margin:5px auto}
+button{margin:5px; }
+.bg-green{background:green; color:#fff;}
+.bg-red{background:rgb(255, 0, 0); color:#fff;}
+.bg-yellow{background:rgb(255, 255, 0); color:#000;}
+.bg-orange{background:rgb(255, 136, 0); color:#000;}
+
+.boxList{display:flex; flex-wrap:nowrap; justify-content: space-between;}
+.box1{width:23%;background:#222; color:#fff; padding:5px; margin:1%; }
+.box2{width:48%;background:#222; color:#fff; padding:5px; margin:1%;}
