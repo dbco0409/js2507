@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <script>
+    class Car{
+      constructor (){
+        this.brand = name;
+      }
+
+      present(){
+        return "브래드: " + this.brand
+      }
+    }
+
+    class Model extends Car{
+      constructor(name, mod){
+        super(name);
+        this.model = mod;
+      }
+      show(){
+        return this.present() + ' ' + this.model;
+      }
+    }
+    const mycar1 = new Model("르노", "XM3");
+    const mycar2 = new Model("현대", "소나타");
+    const mycar3 = new Model("기아", "K5");
+    document.writeln(mycar1.show());
+    document.writeln(mycar2.show());
+    document.writeln(mycar3.show());
+    
+  </script>
+</body>
+</html>
